@@ -11,8 +11,6 @@
 <br>
 <br>
 <br>
-<br>
-<br>
 
 <style>
     div.parent {
@@ -28,6 +26,8 @@
         color: #ffffff;
     }
     h1 {
+        font-size: 40px;
+        font-family: "Franklin Gothic Medium";
         color: #ffffff;
     }
     a:link {
@@ -41,8 +41,7 @@
 <body>
     <div class="parent">
         <ul>
-            <b>Search Result</b>
-            <br>
+            <h1><b>SEARCH RESULT</b></h1>
             <span>SSN: </span><span th:text="${person.ssn}"></span><br/>
             <span>Last name: </span><span th:text="${person.lastName}"></span><br/>
             <span>Suffix: </span><span th:text="${person.suffix}"></span><br/>

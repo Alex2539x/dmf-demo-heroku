@@ -28,6 +28,8 @@
         color: #ffffff;
     }
     h1 {
+        font-size: 40px;
+        font-family: "Franklin Gothic Medium";
         color: #ffffff;
     }
     a:link {
@@ -40,8 +42,7 @@
 <body>
 <div class="parent">
     <ul>
-        <b>Search Result</b>
-        <br>
+        <h1><b>SEARCH RESULT</b></h1>
         <span>SSN: </span><span th:text="${ssn.socialNum}"></span><span> was not found in DMF</span><br/>
         <br>
         <button onclick="history.back()">Go Back</button>
