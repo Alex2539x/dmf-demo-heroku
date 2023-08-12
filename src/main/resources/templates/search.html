@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>DMF Search</title>
+</head>
+
+<style>
+    .center {
+        margin: auto;
+        width: 38%;
+        padding: 10px;
+    }
+    body {
+        background-color: #1f1f1f;
+        font-size: 20px;
+        color: #ffffff;
+    }
+    h1 {
+        color: #ffffff;
+    }
+    a:link {
+        color: #8ab3ff;
+    }
+    a:visited {
+        color: #ffc278;
+    }
+</style>
+
+<body>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="center">
+        Input a 9-digit social security number and click the "Search" button to get a result.
+        Some examples of included (fictional) SSNs on the CSV file are "123456789", "127984670",
+        "784517449", "773688807", "738310376", "169823276", "364782082", and "192891281".
+    </div>
+
+    <br>
+
+    <div class="center">
+        <form action="#" th:action="@{/search}" method="post" th:object="${ssn}">
+            <label>Search by SSN:</label>
+            <input type="text" th:field="*{socialNum}">
+
+            <button type="submit">Search</button>
+            <br>
+            <br>
+            <br>
+            <a href="/">Return to landing page</a>
+        </form>
+    </div>
+
+</body>
+</html>

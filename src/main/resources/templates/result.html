@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>DMF Search Result</title>
+</head>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<style>
+    div.parent {
+        text-align: center;
+    }
+    ul {
+        display: inline-block;
+        text-align: left;
+    }
+    body {
+        background-color: #1f1f1f;
+        font-size: 20px;
+        color: #ffffff;
+    }
+    h1 {
+        color: #ffffff;
+    }
+    a:link {
+        color: #8ab3ff;
+    }
+    a:visited {
+        color: #ffc278;
+    }
+</style>
+
+<body>
+    <div class="parent">
+        <ul>
+            <b>Search Result</b>
+            <br>
+            <span>SSN: </span><span th:text="${person.ssn}"></span><br/>
+            <span>Last name: </span><span th:text="${person.lastName}"></span><br/>
+            <span>Suffix: </span><span th:text="${person.suffix}"></span><br/>
+            <span>First name: </span><span th:text="${person.firstName}"></span><br/>
+            <span>Middle name: </span><span th:text="${person.middleName}"></span><br/>
+            <span>Birth date: </span><span th:text="${person.birthDate}"></span><br/>
+            <span>Death date: </span><span th:text="${person.deathDate}"></span><br/>
+            <span>Description: </span><span th:text="${person.description}"></span><br/>
+            <span>vCode: </span><span th:text="${person.vCode}"></span><br/>
+
+            <br>
+            <button onclick="history.back()">Go Back</button>
+        </ul>
+    </div>
+</body>
+</html>
